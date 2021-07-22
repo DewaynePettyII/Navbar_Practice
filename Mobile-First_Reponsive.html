@@ -1,0 +1,61 @@
+<!-- Boostrap System take advantages of the CSS flexbox layout. This enables simpler and more flexible layout
+    options. Bootstrap grid system uses a series of built in container, row, and column classes to layout an
+    align content. We can utilize bootstrap grid system by applying on built on container class to the outermost 
+    elements. -->
+<!-- Fluid Images: images in a website should automatically adapt itself to the screen size. Bootstrap provides a 
+    prebuilt class that can be utilized to further enhancethe way images are rendered in a website, making it 
+    responsive to different screen sizes. Images in bootstrap made responsive with .img-fluid. This class
+    makes an image scale with its parent element -->
+
+<!-- Nav Bar: home button | panda button | sea turtle button | background-color: dark | Bootstrap 5 link -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Building a Mobile-First Responsive Web Pages</title>
+    <nav class="navbar navbar-light bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <form class="container-fluid justify-content-start">
+                  <button class="btn btn-outline-success me-2" onclick="window.location.href='#panda-id'" type="button">Giant Panda</button>
+                  <button class="btn btn-outline-success me-2" onclick="window.location.href='#turtle-id'" type="button">Sea Turtle</button>
+                </form>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>                
+    </nav>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <h1 class="d-flex justify-content-center">Giant Panda</h1>
+                <img class="img-fluid" alt="Panda" id="panda-id" src="./Images/3ED6FCAB-D280-4197-8B02-BCCD9846076A.jpg" />
+            </div>
+            <div class="col-12 col-md-8 d-flex align-items-center">
+                <p>The Giant Panda, also known as the panda bear, or simply the panda, is a ...</p>
+            </div>
+        </div>
+        <hr>
+        </hr>
+        <div class="row">
+            <div class="col-12 col-md-4 order-md-last">
+                <h1 class="d-flex justify-content-center">Sea Turtle</h1>
+                <img class="img-fluid" alt="Turtle" id="turtle-id" src="./Images/turtle1.jpg" />
+            </div>
+            <div class="col-12 col-md-8 d-flex align-items-center order-md-first">
+                <p>Two species of the sea turtle are critically endangered on the IUCN red list ...</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
